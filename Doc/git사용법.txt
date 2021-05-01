@@ -59,6 +59,10 @@ git 사용법
 12. PULL
 	> git pull origin master
 	> git pull/push [url 또는 url alias] [branch명]
+
+13. BRANCH (운영단계 도입 검토)
+	> 보통 MASTER 밑에 DEV를 두고, DEV에 각 인원이 BRANCH, MERGE REQUEST (CODE REVIEW) 후 DEV PUSH하여 유지하고,
+	MASTER는 DEV에서 테스트가 끝나면 PUSH 하는 식으로 버전관리를 한다.
 	 
 
 [merge]
