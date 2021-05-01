@@ -1,0 +1,69 @@
+git 사용법
+
+1. 환경설정
+	> git config --list
+	> git config --global -e
+	> git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"  (notepad++ 32bit)
+	> git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"  (notepad++ 64bit)
+	> git config --global core.autocrlf true  (윈도우용: 줄바꿈을 \r\n로 자동변환, 레파지토리에는 \n으로 고정)
+	> git config --global core.autocrlf input (리눅스용: 줄바꿈을 \n로 자동변환, 레파지토리에는 \n으로 고정)
+	> git config --global user.name "LEE"
+	> git config --global user.email "leexelon@gmail.com"
+
+	> git config --global alias.st status	(단축키 지정)
+	> git config --global core.quotepath false (한글파일명 깨질때)
+	
+	> git --h
+
+2. STATUS
+	> git status 
+	> git status -s (간단하게)
+	
+	working directory (내 폴더) -(add)-> staging -(commit)-> local repogitory -(push)-> remote  repogitory
+
+3. ADD
+	> git add *
+
+4. RM
+	> git rm *
+
+5. .gitignore
+	> ignore 디렉토리 또는 파일 관리
+
+6. COMMIT
+	> git commit
+	> git commit -m "커밋 리마크"
+	> git commit -am "커밋 리마크 모두 커밋"
+
+7. DIFF 
+	> git diff 
+	> git diff staged (= git diff cached)
+
+8. DIFFTOOL (TOOL을 통해 COMPARE)
+	> .gitconfig 에 아래 설정 추가
+	> git difftool
+
+9. REMOTE
+	> git remote 
+	> git remote add origin https://github.com/leexelon/2021edu
+
+10. PUSH
+	> git branch 
+	> git push origin master (origin remote에 master branch를 remote에 올린다)
+
+11. CLONE
+	> git clone https://github.com/leexelon/2021edu
+	> 
+
+
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = cmd.exe //c "\"C:/Program Files (x86)/IntelliJ IDEA Community Edition 12.0/bin/idea.bat\" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+    trustExitCode = true
+[diff]
+    tool = intellij
+[difftool "intellij"]
+    cmd = cmd.exe //c "\"C:/Program Files (x86)/IntelliJ IDEA Community Edition 12.0/bin/idea.bat\" diff \"$LOCAL\" \"$REMOTE\""
+
+
