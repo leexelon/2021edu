@@ -1,0 +1,59 @@
+0. 개발디렉토리 구조
+
+dev_wnda
+	ide
+		intelliJ
+
+	repository
+		
+
+	projects
+		wnda_web
+		wnda_app
+		skd
+	
+	jdk
+		
+
+
+	oss
+		postgreSql
+		rabbitMq
+
+1. IntelliJ : https://www.jetbrains.com/ko-kr/idea/download/#section=windows
+IntelliJ 플러그인
+	- (최신버전은 기본적용)Lombok (Settings - Build,Excution..., Compiler - Annotaion Processors - Enable annotaion processing)
+	- rainbow braket ({} 색깔 부여)
+	- Atom Material Icons
+IntelliJ 폰트
+	- D2coding : https://github.com/naver/d2codingfont 에서 최신, all로 다운로드, 설치, 재시작
+	- IntelliJ - Setting - Font - D2coding ligatures 선택, enable font ....
+
+2. Git 
+	- Git : https://git-scm.com/downloads에서 받아서 설치
+	- Windows Terminal 도 설치 - 터미널에서 Git 사용
+	- 보통은 terminal 을 써야함, GUI : git source tree
+	
+
+3. chocolatey 설치
+	- 윈도우에서 패키지 설치 관리
+	- https://chocolatey.org/install
+4. JDK
+	- Oracle JDK : Oracle에서 다운로드 또는 skd man (유닉스에서 여러 자바 버전 병렬 관리)으로 설치
+	- Open JDK : https://jdk.java.net/ 에서 다운로드
+	- https://sdkman.io/install 참고
+	- IntelliJ - 프로젝트 폴더 우클릭 - Open Module Setting - Project - ProjectSDK에서 설치한 jdk경로 선택
+	- IntelliJ - Settings - Build,Excution... - Build Tools - Gradle - Gradle JVM.. 에서 선택한 jdk경로 선택
+
+5. Gradle 설치 
+	- 윈도우 터미널(cmd) - choco install gradle
+
+Vue.js : 
+
+PostGre : 10.16 (상위버전은 windows server에만 설치가능)
+(설치 시 깨진문자 나올때 : pc명과 계정명이 모두 영문이어야 설치가 가능함)
+
+
+
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.5.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&dependencies=postgresql,actuator,web,devtools,lombok,security,thymeleaf,codecentric-spring-boot-admin-server,codecentric-spring-boot-admin-client,amqp
+
