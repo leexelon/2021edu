@@ -19,7 +19,8 @@ IntelliJ 폰트
 	- 윈도우에서 패키지 설치 관리
 	- https://chocolatey.org/install
 4. JDK
-	- Oracle에서 다운로드 또는 skd man (유닉스에서 여러 자바 버전 병렬 관리)으로 설치
+	- Oracle JDK : Oracle에서 다운로드 또는 skd man (유닉스에서 여러 자바 버전 병렬 관리)으로 설치
+	- Open JDK : https://jdk.java.net/ 에서 다운로드
 	- https://sdkman.io/install 참고
 	- IntelliJ - 프로젝트 폴더 우클릭 - Open Module Setting - Project - ProjectSDK에서 설치한 jdk경로 선택
 	- IntelliJ - Settings - Build,Excution... - Build Tools - Gradle - Gradle JVM.. 에서 선택한 jdk경로 선택
